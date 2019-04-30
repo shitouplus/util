@@ -57,3 +57,15 @@
 	  })
   }
   ```
+  ### 12. ES6模块通过工厂函数传递数据
+  ```
+  // factory.js(这里假设该模块无法获取$axios)
+  export default $axios => ({
+    fetchList (params) {
+    	return $axios.get(url, params)
+    }
+  })
+  // api.js
+  import factory from 'factory.js'
+  const api = factory($axios)
+  ```
