@@ -69,3 +69,16 @@
   import factory from 'factory.js'
   const api = factory($axios)
   ```
+  ### 13. 使用break退出循环
+  ```
+  function getFoo(arr) {
+    var msg = 'hello '
+    for(var i = 0; i < arr.length; i++) {
+	if (arr[i] === 'world') {
+	  msg += arr[i];
+	  break;
+	}
+     }
+     console.log(msg)
+  }
+  ```
