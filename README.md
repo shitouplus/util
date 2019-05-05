@@ -82,3 +82,16 @@
      console.log(msg)
   }
   ```
+  ### 14. 使用Vue.$nextTick避免合并更新
+  ```
+  this.step = 0;
+  - this.step = 1; // print 1
+  + this.$nextTick(function() {
+      this.step = 1; // print 0 1
+  })
+  watch: {
+    step(val) {
+      console.log(val)
+    }
+  }
+  ```
