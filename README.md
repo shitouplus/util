@@ -95,3 +95,11 @@
     }
   }
   ```
+  ### 15. 使用 ^ 异或操作符取代三元操作符
+  ```
+  var foo = 0;
+  var toggleFoo = function() {
+    - foo = foo === 0 ? 1 : 0
+    + foo = foo ^ 1
+  }
+  ```
