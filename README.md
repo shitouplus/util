@@ -103,3 +103,12 @@
     + foo = foo ^ 1
   }
   ```
+  ### 16. 类型判断
+  ```
+  const isType = type => obj => Object.prototype.toString.call(obj) === `[object ${type}]`
+  const isString = isType('String')
+  const isObject = isType('Object')
+  
+  isString('hello world') // true
+  isObject({}) // true
+  ```
