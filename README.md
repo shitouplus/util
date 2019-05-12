@@ -112,3 +112,7 @@
   isString('hello world') // true
   isObject({}) // true
   ```
+  ### 17. 使用void 屏蔽错误，避免后续代码中断执行
+  ```
+  void new Error('fail')
+  ```
