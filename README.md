@@ -121,3 +121,8 @@
   http  : 80
   https : 443
   ```
+  ### 19. 使用ls-remote查看git远程仓库上的信息
+  ```
+  git ls-remote --tags git@github.com:shitouplus/util.git // 查看远程仓库上的标签，如果当前目录下有.git文件夹仓库地址可省略
+  ```
+  
