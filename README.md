@@ -125,4 +125,8 @@
   ```
   git ls-remote --tags git@github.com:shitouplus/util.git // 查看远程仓库上的标签，如果当前目录下有.git文件夹仓库地址可省略
   ```
+  ### 20. 只克隆特定的tag，有效减小服务器仓库的大小
+  ```
+  git clone -b 'v2.0' --single-branch --depth 1 https://github.com/git/git.git
+  ```
   
