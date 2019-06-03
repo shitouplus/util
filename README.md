@@ -133,7 +133,7 @@
   ```
     // 以pre和post开头的命令会在跑对应的命令时自动运行，pre是在之前运行，post是在之后运行
     "build": "node scripts/build.js",
-    "prebuild": "rm -rf video_cms-0.1.0.tgz",
-    "postbuild": "cp package.json ./build && npm pack ./build",
+    "prebuild": "rm -rf video_cms-0.1.0.tgz", // 删除之前生成的包
+    "postbuild": "cp package.json ./build && npm pack ./build", // 复制package.json文件并打包./build目录
   ```
   
