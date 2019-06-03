@@ -129,4 +129,11 @@
   ```
   git clone -b 'v2.0' --single-branch --depth 1 https://github.com/git/git.git
   ```
+  ### 21. 自动打包命令配置
+  ```
+    // 以pre和post开头的命令会在跑对应的命令时自动运行，pre是在之前运行，post是在之后运行
+    "build": "node scripts/build.js",
+    "prebuild": "rm -rf video_cms-0.1.0.tgz",
+    "postbuild": "cp package.json ./build && npm pack ./build",
+  ```
   
