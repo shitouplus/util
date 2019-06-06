@@ -136,4 +136,7 @@
     "prebuild": "rm -rf video_cms-0.1.0.tgz", // 删除之前生成的包
     "postbuild": "cp package.json ./build && npm pack ./build", // 复制package.json文件并打包./build目录
   ```
-  
+  ### 22. 不需要读取文件即可获取img的像素宽高，video/canvas也有对应的api
+  ```
+  console.log(img.naturalHeight, img.img.naturalWidth)
+  ```
