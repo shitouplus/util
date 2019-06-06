@@ -140,3 +140,5 @@
   ```
   console.log(img.naturalHeight, img.img.naturalWidth)
   ```
+  ### 23. object-fit/object-position/vertical-align 修改video/img/iframe等可替换元素显示样式
+ > mdn https://developer.mozilla.org/zh-CN/docs/Web/CSS/Replaced_element
