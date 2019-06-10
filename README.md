@@ -148,3 +148,7 @@
   while(Date.now() - start < 1000) {}
   console.log('1秒后执行')	
   ```
+  ### 25. 快速删除object中value为undefined的属性, JSON.stringify第二个参数为函数可以进行遍历
+  ```
+  JSON.stringify(object)
+  ```
