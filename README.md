@@ -152,3 +152,8 @@
   ```
   JSON.stringify(object)
   ```
+  ### 25. 获取数组中最小值的索引
+  ```
+  arr.indexOf(Math.min(...arr))
+  // 代码虽然简练但是进行了两轮比较，性能较差
+  ```
