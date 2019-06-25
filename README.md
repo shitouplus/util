@@ -157,3 +157,8 @@
   arr.indexOf(Math.min(...arr))
   // 代码虽然简练但是进行了两轮比较，性能较差
   ```
+  ### 26. JS原生支持base64编码/解码，浏览器支持度很高
+  ```
+  var encodedData = window.btoa("Hello, world"); // 编码
+  var decodedData = window.atob(encodedData); // 解码
+  ```
