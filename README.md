@@ -162,3 +162,9 @@
   var encodedData = window.btoa("Hello, world"); // 编码
   var decodedData = window.atob(encodedData); // 解码
   ```
+  ### 27. JS判断浏览器是否支持某css属性
+  ```
+  if ('fontDisplay' in document.body.style) {
+     console.log('该浏览器支持font-display')
+  }
+  ```
