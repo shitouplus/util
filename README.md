@@ -168,3 +168,11 @@
      console.log('该浏览器支持font-display')
   }
   ```
+  ### 28. 简易模板替换
+  ```
+  String.prototype.temp = function(obj) {
+    return this.replace(/\$\w+$/gi, function(match) {
+      return obj[match.replace(/\$/g, '')] || ''
+    })
+  }
+  ```
