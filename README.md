@@ -195,6 +195,7 @@
   ```
   ### 30. 间隔不连续的for循环
   ```
+  // 创建红色的画布
   var $canvas = document.createElement('canvas')
   var ctx = $canvas.getContext('2d')
   var imageData = ctx.createImageData(100, 100)
@@ -208,4 +209,24 @@
 
   ctx.putImageData(imageData, 0, 0, 0, 0, 50, 50)
   document.body.appendChild($canvas)
+  ```
+  ### 31. 使用window.requestAnimationFrame取代setTimeout和setInterval，绘制dom
+  ```
+  // 使用canvas展示视频
+  var $video = document.getElementById('video')
+  var $canvas = document.getElementById('canvas')
+  var ctx = $canvas.getContext('2d')
+
+  $video.onloadedmetadata = function () {
+    $canvas.width = $video.videoWidth
+    $canvas.height = $video.videoHeight
+  }
+
+  $video.onplay = function play(timestamp) {
+    if ($video.paused || $video.ended) { return }
+    ctx.drawImage($video, 0, 0)
+
+    console.log(timestamp)
+    window.requestAnimationFrame(play)
+  }
   ```
