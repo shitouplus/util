@@ -193,3 +193,19 @@
     return h + ':' + m + ':' + s // return '00:01:01'
   }
   ```
+  ### 30. 间隔不连续的for循环
+  ```
+  var $canvas = document.createElement('canvas')
+  var ctx = $canvas.getContext('2d')
+  var imageData = ctx.createImageData(100, 100)
+
+  for (var i = 0, len = imageData.data.length; i < len; i +=4) { // 每次加4，可以分别操作每个具体的值
+    imageData.data[i] = 255
+    imageData.data[i + 1] = 0
+    imageData.data[i + 2] = 0
+    imageData.data[i + 3] = 255
+  }
+
+  ctx.putImageData(imageData, 0, 0, 0, 0, 50, 50)
+  document.body.appendChild($canvas)
+  ```
