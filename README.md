@@ -230,3 +230,13 @@
     window.requestAnimationFrame(play)
   }
   ```
+  ### 32. 使用 blob 计算字符串的字节数
+  ```
+  var str1 = 'a'
+  var str2 = '我'
+  var blob1 = new Blob([str1])
+  var blob2 = new Blob([str2])
+  
+  console.log(blob1.size) // 1
+  console.log(blob2.size) // 3
+  ```
