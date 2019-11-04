@@ -240,3 +240,7 @@
   console.log(blob1.size) // 1
   console.log(blob2.size) // 3
   ```
+  ### 33. 创建特定大小的数组
+  ```
+  [...Array(n).keys()] // [0, 1, 2, ...., n]
+  ```
