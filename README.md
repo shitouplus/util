@@ -244,3 +244,10 @@
   ```
   [...Array(n).keys()] // [0, 1, 2, ...., n]
   ```
+  ### 34. split分割使结果中包含分隔块
+  ```
+  var myString = "Hello 1 word. Sentence number 2.";
+  var splits = myString.split(/(\d)/);
+
+  console.log(splits); // [ "Hello ", "1", " word. Sentence number ", "2", "." ]
+  ```
