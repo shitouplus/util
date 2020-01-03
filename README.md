@@ -251,3 +251,7 @@
 
   console.log(splits); // [ "Hello ", "1", " word. Sentence number ", "2", "." ]
   ```
+  ### 35. process.env.npm_config_xxx 获取配置信息
+  ```
+  npm run dev --foo=bar // process.env.npm_config_foo === bar
+  ```
