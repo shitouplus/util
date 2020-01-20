@@ -255,3 +255,32 @@
   ```
   npm run dev --foo=bar // process.env.npm_config_foo === bar
   ```
+  ### 36. 使用css属性point-event: none穿透事件
+  ```
+  // html
+  <div class="outer">
+    <a href="javascript:void(0)" onclick="alert('outer')">outer</a>
+    <div class="inner"></div>
+  </div>
+  
+  // css
+  <style>
+	.outer {
+	    position: relative;
+	    width: 200px;
+	    height: 200px;
+	    background: #4e5d6b;
+	}
+
+	.inner {
+	    position: absolute;
+	    top: 0;
+	    left: 0;
+	    width: 100%;
+	    height: 100%;
+	    background: cadetblue;
+	    opacity: 0.5;
+	    pointer-events: none; // 当设置该属性，所有的事件都会向下层渗透，因此<a/>标签可以响应点击事件
+	}
+  </style>
+  ```
