@@ -256,6 +256,7 @@
   npm run dev --foo=bar // process.env.npm_config_foo === bar
   ```
   ### 36. 使用css属性point-event: none穿透事件
+  | 注意: 当设置该属性时，无法使用chrome devtool查找该元素
   ```
   // html
   <div class="outer">
