@@ -289,7 +289,7 @@
   > 当优先级与多个 CSS 声明中任意一个声明的优先级相等的时候，CSS 中最后的那个声明将会被应用到元素上
   > 这里的 “最后” 指的是css样式表中 “定义” 的顺序，而不是html中 “引用” 的类的顺序
 	
-  ### 38. <video>防爬虫
+  ### 38. video防爬虫
   1. 使用blog url，赋值给video标签后立即revoke解除引用
   ```
   const videoSrc = window.url.createobjecturl(blob)
