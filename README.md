@@ -252,8 +252,15 @@
   console.log(splits); // [ "Hello ", "1", " word. Sentence number ", "2", "." ]
   ```
   ### 35. process.env.npm_config_xxx 获取配置信息
+  方法1. 运行命令行时添加参数
   ```
   npm run dev --foo=bar // process.env.npm_config_foo === bar
+  ```
+  方法2. 在命令行里添加参数
+  ```
+  "scripts": {
+    "dev": "foo=bar webpack",
+  }
   ```
   ### 36. 使用css属性point-event: none穿透事件
   > 注意: 当设置该属性时，无法使用chrome devtool查找该元素
