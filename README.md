@@ -310,3 +310,10 @@
   video.play() // 即使<video>未插入文档中，一样可以播放
   canvas.drawImage(video)
   ```
+	
+  ### 39. 阻止input失去焦点
+  ```
+  $node.addEventListener('mousedown', function(e) {
+    e.preventDefault(); // 取消默认行为可阻止节点聚焦，避免其它节点失焦
+  })
+  ```
