@@ -317,3 +317,9 @@
     e.preventDefault(); // 取消默认行为可阻止节点聚焦，避免其它节点失焦
   })
   ```
+
+  ### 40. 正则`非字符串`
+  ```
+  var regex =/^(?!abc$)/;
+  alert(regex.test("abc"))
+  ```
